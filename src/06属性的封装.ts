@@ -65,5 +65,52 @@
     console.log(BlackPerson.hobby);
     console.log(C)
 
+    // private
+    class Animal{
+        protected name:string
+        constructor(theName:string){
+            this.name = theName
+        }
+    }
+    // console.log(new Animal('tiger').name); // error private修饰的属性，只能在类内部进行访问
+    class Rhino extends Animal{
+        constructor(){
+            super('Rhino')
+        }
+    }
+
+    class Employee{
+        protected name:string
+        constructor(theName:string){
+            this.name = theName
+        }
+    }
+
+    let animal = new Animal('Goat')
+    let rhino = new Rhino()
+    let employee = new Employee('Bob')
+
+    animal = rhino
+    // rhino可以赋值给animal，因为Rhino是Animal的子类，他们共享了private name，但是Employee虽然也有private name 但是显然和Animal中的不一样，所以不兼容，保错（使用private和protected都会有这样的限制）
+    // animal = employee  //Type 'Employee' is not assignable to type 'Animal'.   Types have separate declarations of a private property 'name'.
+
+
+    let passCode = 'secret passcode'
+    class User{
+        private _fullName:string = 'smith peta'
+        get fullName(): string{
+            return this._fullName
+        }
+        set fullName(name:string){
+            if (passCode && passCode === 'secret passcode') {
+                this._fullName = name
+            }else{
+                console.log('Error')
+            }
+        }
+    }
+    let user = new User()
+    user.fullName = 'Bob'
+    if (user.fullName) alert(user.fullName)
 
 })()
