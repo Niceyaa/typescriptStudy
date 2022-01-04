@@ -27,3 +27,33 @@ let someValue: any = "this is a string"
 let strLength: number = (<string>someValue).length
 let strLength1: number = (someValue as string).length
 
+
+// 数组解构
+const input = [1,2]
+let [first,second] = input
+function f([first,second]:[number,number]){
+    console.log(first,second)
+}
+f((input as [number,number]))
+f(<[number,number]>input)
+
+let [one,...rest] = [1,2,3,4,5]
+console.log(one) //1
+console.log(rest) //[2,3,4,5]
+
+let [,two] = [1,2,3,4,5]
+console.log(two) // 2
+
+// 对象解构
+let o = {
+    a:'foo',
+    b: 12,
+    d: 'bar'
+}
+// 解构时，指定类型
+let {a,d}:{a:string,d:string} = o
+// 属性重命名
+let {a:propA,b:propB} = o
+
+
+

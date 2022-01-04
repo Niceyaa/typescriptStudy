@@ -14,4 +14,12 @@
             console.log("hello");
         }
     }
+    function printLabel(labelObj) {
+        console.log(labelObj.label);
+    }
+    let myObj = {
+        size: 10,
+        label: '该对象包含属性label和size'
+    };
+    printLabel(myObj);
 })();

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="content"
+     style="height:150px;line-height:150px;text-align:center; color: #fff;background-color:#ccc;font-size:80px;"></div>
+
+<script>
+    let num = 1;
+    let content = document.getElementById('content');
+
+    function count() {
+        content.innerHTML = num++;
+    };
+    content.onmousemove = debounceGenerate(count, 300, immediate);
+
+    // 防抖--非立即执行版
+    function debounce(fn, delay) {
+        let timer = null
+        return function () {
+            const context = this
+            const arg = arguments
+            if (timer) clearTimeout(timer)
+            timer = setTimeout(function () {
+                fn.apply(context, arg)
+            }, delay)
+        }
+    }
+
+    // 防抖--立即执行版
+    function debounceRightNow(fn, delay) {
+        let timer = null
+        return function () {
+            const context = this
+            const arg = arguments
+            if (timer) clearTimeout(timer)
+
+            let flagNow = !timer
+
+            timer = setTimeout(function () {
+                timer = null
+            }, delay)
+
+            flagNow && fn.apply(context, arg)
+        }
+    }
+
+    // 防抖--集成版
+    function debounceGenerate(fn, delay, immediate) {
+        let timer
+        return function () {
+            const context = this
+            const arg = arguments
+            if (timer) clearTimeout(timer)
+            if (immediate) {
+                let flagNow = !timer
+                timer = setTimeout(function () {
+                    timer = null
+                }, delay)
+                flagNow && fn.apply(context, arg)
+            } else {
+                timer = setTimeout(function () {
+                    fn.apply(context,arg)
+                },delay)
+            }
+        }
+    }
+</script>
+</body>
+</html>
