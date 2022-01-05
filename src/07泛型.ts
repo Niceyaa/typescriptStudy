@@ -13,7 +13,7 @@ let result2 = fn<string>("10")
 // console.log(result, result2)
 
 // 定义多个泛型
-function fn2<T,K>(a:T,b:K):T{
+function fn2<T, K>(a: T, b: K): T {
     return a
 }
 
@@ -21,14 +21,61 @@ interface myInter {
     length: number
 }
 
-function fn3<T extends myInter>(a:T):number{
+function fn3<T extends myInter>(a: T): number {
     return a.length
 }
 
-class MyClass<T>{
-    name:T
-    constructor(name:T){
+class MyClass<T> {
+    name: T
+
+    constructor(name: T) {
         this.name = name
     }
 }
+
+// 泛型接口
+/*interface IT{
+    <T>(arg:T): T
+}
+
+function identify<T>(arg:T):T{
+    return arg
+}
+let myIdentify: IT = identify*/
+interface IT<T> {
+    (arg: T): T
+}
+
+function identify<T>(arg: T): T {
+    return arg
+}
+
+let myIdentify: IT<number> = identify
+
+class BeeKeeper {
+    hasMask: boolean = false
+}
+
+class ZooKeeper {
+    nameTag: string = 'name-tag'
+}
+
+class Animal {
+    numLegs: number = 4
+}
+/*
+class Bee extends Animal {
+    keeper: BeeKeeper
+}
+
+class Lion extends Animal {
+    keeper: ZooKeeper
+}
+
+function createInstance<A extends Animal>(c: new () => A): A {
+    return new c()
+}
+
+createInstance(Lion).keeper.nameTag;  // typechecks!
+createInstance(Bee).keeper.hasMask;   // typechecks!*/
 

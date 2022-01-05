@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="473825bd-f89d-48d3-a628-e1edc8a3d4af" name="Default Changelist" comment="类 接口 泛型 提交">
+      <change afterPath="$PROJECT_DIR$/src/08枚举.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/02构造函数.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/02构造函数.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/05接口.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/05接口.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/06属性的封装.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/06属性的封装.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/02构造函数.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/02构造函数.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/05接口.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/05接口.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/06属性的封装.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/06属性的封装.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typescript class.html" beforeDir="false" afterPath="$PROJECT_DIR$/typescript.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/07泛型.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/07泛型.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/07泛型.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/07泛型.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typescript.html" beforeDir="false" afterPath="$PROJECT_DIR$/typescript.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,23 +18,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.39235413">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/typescript.html">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/08枚举.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+                <state relative-caret-position="399">
+                  <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/02构造函数.ts">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/07泛型.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="661">
-                  <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+                <state relative-caret-position="245">
+                  <caret line="65" column="2" selection-start-line="65" selection-end-line="79" selection-end-column="54" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -45,12 +45,21 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dist/02构造函数.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="494">
                   <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/typescript.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="133">
+                  <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -78,15 +87,16 @@
         <option value="$PROJECT_DIR$/src/03继承.ts" />
         <option value="$PROJECT_DIR$/src/04抽象类.ts" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/src/07泛型.ts" />
         <option value="$PROJECT_DIR$/src/基本类型.ts" />
         <option value="$PROJECT_DIR$/src/baseType.ts" />
         <option value="$PROJECT_DIR$/函数防抖与节流.html" />
         <option value="$PROJECT_DIR$/src/05接口.ts" />
         <option value="$PROJECT_DIR$/typescript class.html" />
         <option value="$PROJECT_DIR$/src/06属性的封装.ts" />
-        <option value="$PROJECT_DIR$/typescript.html" />
         <option value="$PROJECT_DIR$/src/02构造函数.ts" />
+        <option value="$PROJECT_DIR$/src/07泛型.ts" />
+        <option value="$PROJECT_DIR$/typescript.html" />
+        <option value="$PROJECT_DIR$/src/08枚举.ts" />
       </list>
     </option>
   </component>
@@ -174,6 +184,7 @@
       <workItem from="1640857282402" duration="4091000" />
       <workItem from="1640911764690" duration="8307000" />
       <workItem from="1641257068647" duration="10499000" />
+      <workItem from="1641342842344" duration="6056000" />
     </task>
     <task id="LOCAL-00001" summary="类 接口 泛型 提交">
       <created>1637744211124</created>
@@ -193,13 +204,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38690000" />
+    <option name="totallyTimeSpent" value="44746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21443625" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21443625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -212,7 +223,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.18763557" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27114967" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -239,16 +250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/07泛型.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -307,13 +308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typescript.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -321,17 +315,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/02构造函数.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/02构造函数.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/02构造函数.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/07泛型.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="65" column="2" selection-start-line="65" selection-end-line="79" selection-end-column="54" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/08枚举.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
         </state>
       </provider>
     </entry>

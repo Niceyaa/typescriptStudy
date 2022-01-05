@@ -22,3 +22,37 @@ class MyClass {
         this.name = name;
     }
 }
+function identify(arg) {
+    return arg;
+}
+let myIdentify = identify;
+class BeeKeeper {
+    constructor() {
+        this.hasMask = false;
+    }
+}
+class ZooKeeper {
+    constructor() {
+        this.nameTag = 'name-tag';
+    }
+}
+class Animal {
+    constructor() {
+        this.numLegs = 4;
+    }
+}
+/*
+class Bee extends Animal {
+    keeper: BeeKeeper
+}
+
+class Lion extends Animal {
+    keeper: ZooKeeper
+}
+
+function createInstance<A extends Animal>(c: new () => A): A {
+    return new c()
+}
+
+createInstance(Lion).keeper.nameTag;  // typechecks!
+createInstance(Bee).keeper.hasMask;   // typechecks!*/
