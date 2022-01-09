@@ -6,7 +6,8 @@
     "outDir": "./dist",
     "noEmitOnError": true,
     "noImplicitAny": true,
-    "noImplicitThis": true
+    "noImplicitThis": true,
+    "strictNullChecks": true
   },
   "include": [
     "./src/**/*"
