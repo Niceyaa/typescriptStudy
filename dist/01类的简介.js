@@ -10,15 +10,13 @@
 *
 * */
 class Person {
-    constructor() {
-        // readonly name: string = '孙悟空'
-        this.name = '孙悟空';
-    }
+    // readonly name: string = '孙悟空'
+    name = '孙悟空';
+    static age = 1;
     sayHello() {
         console.log('hhhh');
     }
 }
-Person.age = 1;
 const per = new Person();
 per.name = '猪八戒';
 per.sayHello();

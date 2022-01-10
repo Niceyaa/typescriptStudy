@@ -7,6 +7,8 @@
     * */
     //定义动物类
     class Animal {
+        name;
+        age;
         constructor(name, age) {
             this.age = age;
             this.name = name;

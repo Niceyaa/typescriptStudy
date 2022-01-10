@@ -2,6 +2,8 @@
 (function () {
     //定义动物类
     class Animal {
+        name;
+        age;
         constructor(name, age) {
             this.age = age;
             this.name = name;
@@ -12,6 +14,8 @@
     }
     //定义狗类
     class Dog extends Animal {
+        //子类Dog中的super就相当于父类 Animal
+        color;
         constructor(name, age, color) {
             super(name, age);
             this.color = color;

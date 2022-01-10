@@ -18,6 +18,7 @@ function fn3(a) {
     return a.length;
 }
 class MyClass {
+    name;
     constructor(name) {
         this.name = name;
     }
@@ -27,19 +28,13 @@ function identify(arg) {
 }
 let myIdentify = identify;
 class BeeKeeper {
-    constructor() {
-        this.hasMask = false;
-    }
+    hasMask = false;
 }
 class ZooKeeper {
-    constructor() {
-        this.nameTag = 'name-tag';
-    }
+    nameTag = 'name-tag';
 }
 class Animal {
-    constructor() {
-        this.numLegs = 4;
-    }
+    numLegs = 4;
 }
 /*
 class Bee extends Animal {

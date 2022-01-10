@@ -1,11 +1,17 @@
 "use strict";
 (function () {
     class Person {
-        constructor(name, age, gender) {
-            this._name = name;
-            this._age = age;
-            this.gender = gender;
-        }
+        // 定义属性的时候，可以添加属性修饰符
+        /*
+        *  public 修饰的属性可以在任意位置访问（修改），默认值
+        *  private 修饰的属性，只能在类内部进行访问（修改）
+        *  protected 修饰的属性，和private差不多，protected修饰的属性，但在子类内部是可以访问的
+        *  static 定义静态属性，只能通过类名去访问
+        * */
+        _name;
+        gender;
+        static hobby = '摸鱼';
+        _age;
         get name() {
             return this._name;
         }
@@ -13,8 +19,12 @@
             console.log("我执行了吗--name");
             this._name = value;
         }
+        constructor(name, age, gender) {
+            this._name = name;
+            this._age = age;
+            this.gender = gender;
+        }
     }
-    Person.hobby = '摸鱼';
     class BlackPerson extends Person {
         test() {
             console.log(this.gender);
@@ -31,6 +41,8 @@
     }*/
     // 简写
     class C {
+        name;
+        age;
         constructor(name, age) {
             this.name = name;
             this.age = age;
@@ -47,6 +59,7 @@
     console.log(C);
     // private
     class Animal {
+        name;
         constructor(theName) {
             this.name = theName;
         }
@@ -58,6 +71,7 @@
         }
     }
     class Employee {
+        name;
         constructor(theName) {
             this.name = theName;
         }
@@ -70,9 +84,7 @@
     // animal = employee  //Type 'Employee' is not assignable to type 'Animal'.   Types have separate declarations of a private property 'name'.
     let passCode = 'secret passcode';
     class User {
-        constructor() {
-            this._fullName = 'smith peta';
-        }
+        _fullName = 'smith peta';
         get fullName() {
             return this._fullName;
         }

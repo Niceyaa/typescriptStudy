@@ -347,6 +347,7 @@
 
         // ... other operations go here ...
     }
+
     /*
     * 如果没有this类型，ScientificCalculator就不能够在继承BasicCalculator的同时还保持接口的连贯性。 multiply将会返回BasicCalculator，它并没有sin方法。 然而，使用this类型，multiply会返回this，在这里就是ScientificCalculator。
     * */
@@ -355,21 +356,132 @@
     // function pluck(o,names){
     //     return names.map(n=>o[n])
     // }
-    function pluck<T,K extends keyof T>(o:T,names:K[]):T[K][]{
+    function pluck<T, K extends keyof T>(o: T, names: K[]): T[K][] {
         return names.map(n => o[n])
     }
 
-    interface Person{
-        name:string,
-        age:number
+    interface Person {
+        name: string,
+        age: number
     }
-    let person:Person = {
-        name:'Jarid',
-        age:35
-    }
-    let strings:any[] = pluck(person,['name','age'])
-    console.log('strings',strings)
 
+    let person: Person = {
+        name: 'Jarid',
+        age: 35
+    }
+    let strings: any[] = pluck(person, ['name', 'age'])
+    console.log('strings', strings)
+
+    // keyof Person === 'name'| 'age'
+    // T[K] === Person.name 的类型，即string
+    // 索引类型和字符串索引签名
+    // keyof和 T[K]与字符串索引签名进行交互。 如果你有一个带有字符串索引签名的类型，那么 keyof T会是 string。 并且 T[string]为索引签名的类型：
+    interface Map<T> {
+        [key: string]: T
+    }
+
+    let keys: keyof Map<number> // string
+    let value: Map<number>['foo']  // number
+
+    // 映射类型
+    type Readonly<T> = {
+        readonly [P in keyof T]: T[P]
+    }
+    type Partial<T> = {
+        [P in keyof T]?: T[P]
+    }
+    type PersonPartial = Partial<Person>
+    type ReadonlyPerson = Readonly<Person>
+
+    type Keys = 'option1' | 'option2'
+    type Flags = {
+        [K in Keys]: boolean
+    }
+    /* 全等于
+        type Flags = {
+            option1:boolean,
+            option2:boolean,
+        }
+    */
+
+    type Proxy<T> = {
+        get(): T,
+        set(value: T): void
+    }
+    type Proxify<T> = {
+        [P in keyof T]: Proxy<T[P]>
+    }
+
+    function proxify<T>(o: T): Proxify<T> {
+        return <Proxify<T>>{}
+    }
+
+    interface ProxyInter {
+        get?(target: object, p: string | symbol, receiver: any): any,
+
+        set?(target: object, p: string | symbol, value: any, receiver: any): boolean
+    }
+
+    // 封装一个Proxy函数
+    function setProxy(pObj: object, selfConfig?: ProxyInter) {
+        return new Proxy(pObj, selfConfig ? selfConfig : {
+            get(target: object, p: string | symbol, receiver: any): any {
+                return Reflect.get(target, p, receiver)
+            },
+            set(target: object, p: string | symbol, value: any, receiver: any): boolean {
+                return Reflect.set(target, p, value, receiver)
+            }
+        })
+    }
+
+    // 由映射类型进行推断
+    function unproxify<T>(t: Proxify<T>): T {
+        let result = {} as T
+        for (const k in t) {
+            result[k] = t[k].get()
+        }
+        return result
+    }
+
+    /* TypeScript 2.8 在lib.d.ts里增加了一些预定义的有条件类型：
+         Exclude < T, U > --从T中剔除可以赋值给U的类型。
+         Extract < T, U > --提取T中可以赋值给U的类型。
+         NonNullable < T > --从T中剔除null和undefined。
+         ReturnType < T > --获取函数返回值类型。
+         InstanceType < T > --获取构造函数类型的实例类型。
+     */
+
+    type T00 = Exclude<'a' | 'b' | 'c' | 'd', 'a' | 'c' | 'f'>; // 'b'|'d'
+    type T01 = Extract<"a" | "b" | "c" | "d", "a" | "c" | "f">; // 'a'|'c'
+
+    type T02 = Exclude<string | number | (() => void), Function>;  // string | number
+    type T03 = Extract<string | number | (() => void), Function>;  // () => void
+
+    type T04 = NonNullable<string | number | undefined>;  // string | number
+    type T05 = NonNullable<(() => string) | string[] | null | undefined>;  // (() => string) | string[]
+
+    function f1(s: string) {
+        return { a: 1, b: s };
+    }
+    class C {
+        x = 0;
+        y = 0;
+    }
+    type T10 = ReturnType<() => string>;  // string
+    type T11 = ReturnType<(s: string) => void>;  // void
+    type T12 = ReturnType<(<T>() => T)>;  // {}
+    type T13 = ReturnType<(<T extends U, U extends number[]>() => T)>;  // number[]
+    type T14 = ReturnType<typeof f1>;  // { a: number, b: string }
+    type T15 = ReturnType<any>;  // any
+    type T16 = ReturnType<never>;  // any
+    // type T17 = ReturnType<string>;  // Error
+    // type T18 = ReturnType<Function>;  // Error
+
+    type T20 = InstanceType<typeof C>;  // C
+    type T21 = InstanceType<any>;  // any
+    type T22 = InstanceType<never>;  // any
+    // type T23 = InstanceType<string>;  // Error
+    // type T24 = InstanceType<Function>;  // Error
 
 })()
 

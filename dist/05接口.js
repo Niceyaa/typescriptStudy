@@ -7,6 +7,7 @@
     };
     // 定义类时，可以使类去实现一个接口，实现接口就是使类去满足接口的要求
     class MyClass {
+        gender;
         constructor(gender) {
             this.gender = gender;
         }
@@ -25,11 +26,13 @@
     };
     printLabel(myObj);
     class Animal {
+        name;
         constructor(name) {
             this.name = name;
         }
     }
     class Dog extends Animal {
+        breed;
         constructor(breed, name) {
             super(name);
             this.breed = breed;
@@ -40,8 +43,9 @@
         y: 2
     };
     class myClass {
+        currentDate;
+        a = '1';
         constructor(currentDate) {
-            this.a = '1';
             this.currentDate = currentDate;
         }
         setTime(d) {

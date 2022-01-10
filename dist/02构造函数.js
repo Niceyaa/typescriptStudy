@@ -1,5 +1,7 @@
 "use strict";
 class Dog {
+    name;
+    age;
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -29,9 +31,8 @@ let greeter:Greeter
 greeter = new Greeter('Hello World!')
 console.log(greeter.greet(),Greeter)*/
 class Greeter {
-    constructor() {
-        this.greeting = '1';
-    }
+    static standardGreeting = "Hello, there";
+    greeting = '1';
     greet() {
         if (this.greeting) {
             return "Hello, " + this.greeting;
@@ -41,7 +42,6 @@ class Greeter {
         }
     }
 }
-Greeter.standardGreeting = "Hello, there";
 let greeter1;
 greeter1 = new Greeter();
 console.log(greeter1.greet());
