@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="473825bd-f89d-48d3-a628-e1edc8a3d4af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Symbol.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/Calculator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/MyLargeModule.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/ProgrammerCalculator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/模块.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/Cunsumer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/LettersOnlyValidator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/Map.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/Observable.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/Test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/Validation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/ZipCodeValidator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/namespace.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/声明合并.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/01类的简介.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/01类的简介.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/02构造函数.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/02构造函数.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/03继承.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/03继承.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/04抽象类.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/04抽象类.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/05接口.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/05接口.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/06属性的封装.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/06属性的封装.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/07泛型.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/07泛型.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jibenleixing" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/09高级类型.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/09高级类型.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/typescript.html" beforeDir="false" afterPath="$PROJECT_DIR$/typescript.html" afterDir="false" />
     </list>
@@ -34,49 +29,44 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/模块.ts">
+            <entry file="file://$PROJECT_DIR$/src/声明合并.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="247">
-                  <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+                <state relative-caret-position="639">
+                  <caret line="170" column="26" selection-start-line="170" selection-start-column="26" selection-end-line="170" selection-end-column="26" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
+                    <element signature="n#!!block;n#animalsHaveMuscles#0;n#Animal#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/modules/ProgrammerCalculator.ts">
+            <entry file="file://$PROJECT_DIR$/src/modules/Observable.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+                <state relative-caret-position="114">
+                  <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/modules/Calculator.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-38">
-                  <caret line="28" column="91" lean-forward="true" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="91" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/modules/MyLargeModule.ts">
+            <entry file="file://$PROJECT_DIR$/src/modules/Map.ts">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="57">
-                  <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+                  <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tsconfig.json">
+            <entry file="file://$PROJECT_DIR$/src/modules/Cunsumer.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
-                  <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+                <state relative-caret-position="38">
+                  <caret line="2" column="19" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -89,7 +79,7 @@
             <entry file="file://$PROJECT_DIR$/typescript.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="133">
-                  <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+                  <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -106,8 +96,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="tsconfig.json" />
         <option value="HTML File" />
+        <option value="tsconfig.json" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -133,12 +123,22 @@
         <option value="$PROJECT_DIR$/src/类型推论.ts" />
         <option value="$PROJECT_DIR$/src/09高级类型.ts" />
         <option value="$PROJECT_DIR$/src/Symbol.ts" />
-        <option value="$PROJECT_DIR$/typescript.html" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/modules/MyLargeModule.ts" />
         <option value="$PROJECT_DIR$/src/modules/Calculator.ts" />
         <option value="$PROJECT_DIR$/src/模块.ts" />
         <option value="$PROJECT_DIR$/src/modules/ProgrammerCalculator.ts" />
+        <option value="$PROJECT_DIR$/src/namespace.ts" />
+        <option value="$PROJECT_DIR$/src/modules/Validation.ts" />
+        <option value="$PROJECT_DIR$/src/modules/LettersOnlyValidator.ts" />
+        <option value="$PROJECT_DIR$/src/modules/ZipCodeValidator.ts" />
+        <option value="$PROJECT_DIR$/src/modules/Test.ts" />
+        <option value="$PROJECT_DIR$/dist/modules/ZipCodeValidator.js" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/typescript.html" />
+        <option value="$PROJECT_DIR$/src/modules/Cunsumer.ts" />
+        <option value="$PROJECT_DIR$/src/modules/Observable.ts" />
+        <option value="$PROJECT_DIR$/src/声明合并.ts" />
+        <option value="$PROJECT_DIR$/src/modules/Map.ts" />
       </list>
     </option>
   </component>
@@ -231,6 +231,7 @@
       <workItem from="1641429231937" duration="14258000" />
       <workItem from="1641515408031" duration="15069000" />
       <workItem from="1641775405069" duration="15573000" />
+      <workItem from="1641861198702" duration="10540000" />
     </task>
     <task id="LOCAL-00001" summary="类 接口 泛型 提交">
       <created>1637744211124</created>
@@ -257,7 +258,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89646000" />
+    <option name="totallyTimeSpent" value="100186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -361,16 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/07泛型.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="65" column="2" selection-start-line="65" selection-end-line="79" selection-end-column="54" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/02构造函数.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -411,9 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/09高级类型.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/09高级类型.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="606">
@@ -436,17 +424,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typescript.html">
+    <entry file="file://$PROJECT_DIR$/src/模块.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="209">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+    <entry file="file://$PROJECT_DIR$/src/modules/Calculator.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        <state relative-caret-position="532">
+          <caret line="28" column="91" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="91" />
         </state>
       </provider>
     </entry>
@@ -457,27 +448,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/Calculator.ts">
+    <entry file="file://$PROJECT_DIR$/dist/09高级类型.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/ProgrammerCalculator.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="28" column="91" lean-forward="true" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="91" />
+        <state relative-caret-position="475">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/模块.ts">
+    <entry file="file://$PROJECT_DIR$/src/modules/LettersOnlyValidator.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="76">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/ZipCodeValidator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/namespace.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/ProgrammerCalculator.ts">
+    <entry file="file://$PROJECT_DIR$/dist/namespace.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Validation.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        <state relative-caret-position="19">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/modules/Test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/modules/Validation.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/modules/ZipCodeValidator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typescript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/07泛型.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/声明合并.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="170" column="26" selection-start-line="170" selection-start-column="26" selection-end-line="170" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#animalsHaveMuscles#0;n#Animal#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Cunsumer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Map.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/Observable.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
         </state>
       </provider>
     </entry>
